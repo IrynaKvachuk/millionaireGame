@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Millionaire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="game-header">
+    <button class="btn btn-start" id="btnStart">Start new game</button>
+    <button class="btn btn-skip" id="btnSkip">Skip question</button>
+  </header>
+  <main>
+    <section class="game-card" id="gameCard" aria-label="card">
+      <div class="game-card-wrapper">
+        <p class="game-question" id="question"></p>
+        <div class="options">
+          <button class="btn btn-option"></button>
+          <button class="btn btn-option"></button>
+          <button class="btn btn-option"></button>
+          <button class="btn btn-option"></button>
+        </div>
+        <div class="game-info">
+          <p id="totalPrize"></p>
+          <p id="currentPrize"></p>
+        </div>
+      </div>
+    </section>
+    <section class="game-result" id="gameResult" aria-label="result">
+      <p class="game-result-info" id="gameResultInfo"></p>
+    </section>
+  </main>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
